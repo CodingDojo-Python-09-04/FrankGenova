@@ -38,11 +38,13 @@ random_num = random.randint()
 import random
 random_scores = []
 
+
 def get_random_scores(number_of_scores):
     for i in range(1, number_of_scores):
         random_score = random.randint(60, 100)
         random_scores.append(random_score)
     return random_scores
+
 
 def print_grades(random_scores):
     for each in random_scores:
@@ -55,6 +57,6 @@ def print_grades(random_scores):
         elif each >= 60:
             print("Score: {}, Your grade is D".format(each,))
 
+
 random_scores = get_random_scores(10)
 print_grades(random_scores)
-
