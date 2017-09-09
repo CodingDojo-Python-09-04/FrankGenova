@@ -1,0 +1,7 @@
+pip install Django: Installing an official release with pip This is the recommended way to install Django.
+
+pip list List installed packages, including editables.
+
+pip freeze Generate output suitable for a requirements file.
+
+when using requirements.txt created a file in that name
