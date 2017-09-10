@@ -1,0 +1,19 @@
+{% extends 'layout.html'%}
+{% block title%}Ninjas{% endblock %}
+{% block leftDiv %}
+<img class="portrait" src="../static/img/ninja.png" alt="ninja">
+{% endblock%}
+{% block rightDiv %}
+<h2>Ninja FAQ</h2>
+<ul>
+    <li><h3>What do Ninjas eat?</h3><p>They eat sushi, sashimi, rice, and steak tartare.  Once a year they eat the heart of an ox.</p></li>
+    <li><h3>What do Ninjas wear?</h3><p>They wear leather, weapons and masks. On halloween, the dress up as Soldiers or Star Wars characters.</p></li>
+    <li><h3>What kind of work out does a a Ninja do?</h3>They work out twice a day.  For cardio they run about 10 k.  Then they relax with weight lifting for about 3 hours.  Their favorite exercise is a pull-up.</li>
+</ul>
+{% endblock%}
+{% block footer%}
+<form action=" ">
+    <input class="ui-button ui-widget ui-corner-all" type="submit" value="/index">
+    <input class="ui-button ui-widget ui-corner-all" type="submit" value="/dojos/new">
+</form>
+{%endblock%}

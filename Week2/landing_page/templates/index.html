@@ -1,0 +1,15 @@
+{%extends 'layout.html'%}
+{% block title%}Index{% endblock %}
+{% block leftDiv %}
+<img class="portrait" src="../static/img/ninja.png" alt="ninja">
+
+{% endblock%}
+{% block rightDiv %}
+<img class="portrait" src="../static/img/dojo.jpg" alt="dojo">
+{% endblock%}
+{% block footer%}
+<form action=" ">
+    <input class="ui-button ui-widget ui-corner-all" type="submit" value="/ninjas">
+    <input class="ui-button ui-widget ui-corner-all" type="submit" value="/dojos/new">
+</form>
+{%endblock%}
