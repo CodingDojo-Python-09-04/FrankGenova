@@ -8,8 +8,8 @@
 <img class="portrait" src="../static/img/dojo.jpg" alt="dojo">
 {% endblock%}
 {% block footer%}
-<form action=" ">
-    <input class="ui-button ui-widget ui-corner-all" type="submit" value="/ninjas">
-    <input class="ui-button ui-widget ui-corner-all" type="submit" value="/dojos/new">
+<form action='/goto' method='post'>
+    <input class="ui-button ui-widget ui-corner-all" type="submit" name="page" value="/ninjas">
+    <input class="ui-button ui-widget ui-corner-all" type="submit" name="page" value="/dojos/new">
 </form>
 {%endblock%}

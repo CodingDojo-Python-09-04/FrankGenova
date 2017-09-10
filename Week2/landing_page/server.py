@@ -6,7 +6,7 @@ see about.md for details
 '''
 
 from flask import Flask
-from flask import render_template
+from flask import render_template, redirect, request
 
 app = Flask(__name__)
 
@@ -27,6 +27,11 @@ def dojos_new():
     '''Render view for /dojos/new'''
 
     return render_template('dojos.html')
+
+@app.route('/goto', methods=['POST'])
+def goto(page='index.html'):
+    location = request.form['page']
+    return redirect(location)
 
 def main():
     app.run(debug=True)
