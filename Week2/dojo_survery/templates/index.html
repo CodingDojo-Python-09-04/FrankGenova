@@ -11,9 +11,9 @@
     <title>Index</title>
 </head>
 <body>
-    <div id="content">
+    <div id="content" class="container col-sm-4">
         {% block content%}
-        <form id="dojo_form" action="/results" method="post">
+        <form id="dojo_form" action="/result" method="POST">
             <label for="name"><h4>Your Name:</h4></label>
             <input type="text" name="name" id="name" class="form-control form-control-lg">
             <fieldset>
@@ -40,7 +40,7 @@
             </fieldset>
             <label for="comments"><h4>Comment (optional):</h4></label>
             <input type="text" name="comments" id="comments" class="form-control form-control-lg">
-            <input id="submit" type="button" value="Submit" class="btn-block btn-primary">
+            <input id="submit" type="submit" value="Submit" class="btn-block btn-primary">
         </form>
         {% endblock%}
     </div>

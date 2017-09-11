@@ -15,15 +15,18 @@ def index():
 
     return render_template('index.html')
 
-@app.route('/result', methods=['POST'])
-def result():
+@app.route('/result', methods=['GET','POST'])
+def form_content():
     '''Route for /result to render result.html'''
-    print("made it")
+
     name = request.form['name']
     location = request.form['location']
     language = request.form['language']
     comments = request.form['comments']
-    render_template('result.html')
-    return redirect('result.html')
+    # render_template('result.html')
+    context = {'name':name, 'location':location, 'language':language, 'comments':comments}
+    # return render_template('result.html', **context)
+    # name = "Frank J Genova"
+    return render_template('result.html', **context)
 
 app.run(debug=True)
