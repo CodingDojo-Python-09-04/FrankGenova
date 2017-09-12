@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Form Test Index</title>
-    </head>
-    <body>
-        <h1>Index Page</h1>
-        <h3>Create a User</h3>
-        <!-- read on to learn about form actions, we'll talk about the method in a later section -->
-        <form action='/users' method='post'>
-            Name: <input type='text' name='name'>
-            Email: <input type='text' name='email'>
-            <input type='submit' value='create user'>
-        </form>    
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/styles.css')}}">
+    
+    <title>Make Fake</title>
+</head>
+<body>
+    <div id="content" class="container col-sm-4">
+        {% block content%}
+        <form id="fake_form" action="/result" method="POST">
+            <label for="name"><h4>Fake Name:</h4></label>
+            <input type="text" name="name" id="name" class="form-control form-control-lg">
+            <label for="dob"><h4>Date of Birth:</h4></label>
+            <input type="date" name="dob" id="dob" class="form-control form-control-lg">
+            <input id="submit" type="submit" value="Submit" class="btn-block btn-primary">
+        </form>
+        {% endblock%}
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="../static/js/apps.js"></script>
+</body>
 </html>
