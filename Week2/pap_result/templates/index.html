@@ -12,9 +12,12 @@
 <body>
     <div id="content" class="container col-sm-4">
         {% block content%}
-        <form id="fake_form" action="/result" method="POST">
+        <form action="/result" method="POST" id="needs-validation" novalidate>
             <label for="name"><h4>Fake Name:</h4></label>
-            <input type="text" name="name" id="name" class="form-control form-control-lg">
+            <input type="text" name="name" id="name" class="form-control form-control-lg" placeholder="Fake^X^Name" required>
+            <div class="invalid-feedback">
+                Fake  name from target environment is required.
+            </div>
             <label for="dob"><h4>Date of Birth:</h4></label>
             <input type="date" name="dob" id="dob" class="form-control form-control-lg">
             <input id="submit" type="submit" value="Submit" class="btn-block btn-primary">
