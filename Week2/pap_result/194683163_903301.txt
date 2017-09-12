@@ -1,0 +1,14 @@
+BHS|^~\&|||||20170912190453
+MSH|^~\&|LIS08|MA|AMR17|MA|20170912072510||ORU^R01|Q660535622T659676929|P|2.3.1
+PID|1|57163638^^^KP1106|57163638^^^KP1106^MR||BARUA^SRABONI||19720717|F|||4480 RUGGLES CT^^ANNANDALE^VA^22003||(571)331-0320|(917)523-5645|||||||||||0|||||N
+PV1|1|OP|1300050011^^^130005^^^130005||||8023^WILSON^SIMON^A^^1^M.D.^^KP1081^^^^PRN|||||||||||OP|242552523||||||||||||||||||||130005|||||20170906073902
+ORC|RE|194683163^KP1127|000052017249001123^KP1109
+OBR|1|194683163^KP1127|000052017249001123^KP1109|A54321^PAPw/HPV/Geno(Q):^99308|||20170906081700|||||||20170906101800|^^^ECX&Endocervical|8023^WILSON^SIMON^A^^1^M.D.^^KP1081^^^^PRN||||412906347||20170912072509||GENLAB|F||1^^^20170906000000^^R~^^^^^R|||||||||20170906090000
+OBX|1|TX|A1345^PAP Thin Prp(Q):^99307||SEE NOTE|||||UNK|F|||20170912072507|QST|^CONTRIBUTOR_SYSTEM^QUEST MA
+NTE|1|C| \.br\TESTS:       THIN PREP PAP (1)\.br\CLINICAL HISTORY/INFORMATION:\.br\LMP DATE: N/P\.br\SOURCE: Endocervix\.br\CLINICAL INFO: Not Provided\.br\HORMONES: NOT PROVIDED\.br\__________________________________________________________________\.br\SPECIMEN ADEQUACY:\.br\Satisfactory for Evaluation\.br\Endocervical/Transformation Zone component present\.br\------------------------ FINAL INTERPRETATION ------------------------\.br\NEGATIVE FOR INTRAEPITHELIAL LESION OR MALIGNANCY\.br\COMMENTS:\.br\LMP not provided\.br\Screener                                  ELECTRONIC SIGNATURE ON FILE\.br\CAM                                       ____________________________\.br\CT(ASCP)                                  CAM\.br\                                          CT(ASCP)\.br\The Pap is a screening test for cervical cancer. It is not a\.br\diagnostic test and is subject to false negative and false positive\.br\results.  It is most reliable when a satisfactory sample, regularly\.br\obtained, is submitted with relevant clinical findings and history,\.br\and when the Pap result is evaluated along with historic and current\.br\clinical information.
+OBX|2|TX|90887A^HPV mRNA E6/E7(Q):^99307||Not Detected||NOT DETECTED|||UNK|F|||20170912072507|QST|^CONTRIBUTOR_SYSTEM^QUEST MA
+NTE|1|C|This test was performed using the APTIMA(R) HPV Assay\.br\(Gen-Probe Inc.).\.br\This assay detects E6/E7 viral messenger RNA (mRNA)\.br\from 14 high-risk HPV types (16,18,31,33,35,39,45,51,\.br\52,56,58,59,66,68).\.br\For additional information please refer to:\.br\http://education.questdiagnostics.com/faq/FAQ129v1\.br\(This link is being provided for informational/\.br\educational purposes only.)
+OBX|3|TX|23347^HPV Additional Testing (Q):^99307||Not indicated|||||UNK|F|||20170912072507|QST|^CONTRIBUTOR_SYSTEM^QUEST MA
+NTE|1|C|Test Performed by Quest, Chantilly,\.br\Quest Diagnostics Nichols Institute,\.br\14225 Newbrook Drive, Chantilly, VA 20151\.br\Patrick W Mason, M.D., Ph.D., Director of Laboratories\.br\(703) 802-6900, CLIA 49D0221801
+BTS|1
+
