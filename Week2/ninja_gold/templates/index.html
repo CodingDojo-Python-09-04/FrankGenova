@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
-    <link rel="stylesheet" href="../static/styles.css">
     <title>Ninja Gold</title>
 </head>
 <body>
@@ -16,44 +15,60 @@
                 <h3>Your gold: <span>{{gold_stash}}</span></h3>
             </div>
         </div>
-        <div class='row'>
-            <form action="/process" method='post'>
-                <div class='row'>
-                    <div class='col b_grad col-sm-3'>
-                        <h3>Farm</h3>
-                        <p>(earns 10-20 golds)</p>
+        <div class='row jumbotron'>
+            <div class='row'>
+                <div class='col b_grad col-sm-3 alert-primary'>
+                    <h3>Farm</h3>
+                    <p class='earns'>(earns 10-20 golds)</p>
+                    <form action="/process_money" method='post'>
                         <label class="sr-only" for="farm"></label>
                         <input type="hidden" name="building" value="farm" id="farm">
                         <input type="submit" value="Find Gold!">
-                    </div>
-                    <div class='col b_grad col-sm-3'>
-                        <h3>Cave</h3>
-                        <p>(earns 5-10 golds)</p>
+                    </form>
+                </div>
+                <div class='col b_grad col-sm-3 alert-success'>
+                    <h3>Cave</h3>
+                    <p class='earns'>(earns 5-10 golds)</p>
+                    <form action="/process_money" method='post'>
                         <label class="sr-only" for="cave"></label>
                         <input type="hidden" name="building" value="cave" id="cave">
                         <input type="submit" value="Find Gold!">
-                    </div>
-                    <div class='col b_grad col-sm-3'>
-                        <h3>House</h3>
-                        <p>(earns 2-5 golds)</p>
+                    </form>
+                </div>
+                <div class='col b_grad col-sm-3 alert-warning'>
+                    <h3>House</h3>
+                    <p class='earns'>(earns 2-5 golds)</p>
+                    <form action="/process_money" method='post'>
                         <label class="sr-only" for="house"></label>
                         <input type="hidden" name="building" value="house" id="house">
                         <input type="submit" value="Find Gold!">
-                    </div>
-                    <div class='col b_grad col-sm-3'>
-                        <h3>Casino</h3>
-                        <p>(earns/take 0-50 golds)</p>
+                    </form>
+                </div>
+                <div class='col b_grad col-sm-3 alert-danger'>
+                    <h3>Casino</h3>
+                    <p class='earns'>(earns/take 0-50 golds)</p>
+                    <form action="/process_money" method='post'>
                         <label class="sr-only" for="casino"></label>
                         <input type="hidden" name="building" value="casino" id="casino">
                         <input type="submit" value="Find Gold!">
-                    </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </div>
         <div class='row'>
             <div class='col b_grad'>
                 <h2>Activities</h2>
-                <textarea name="activities" id="" cols="30" rows="10"></textarea>
+                    {% for each in activities%}
+                    {% if "Earned" in each%}
+                        <p class='win'>
+                            {{each}}
+                        </p>
+                    {% else %}
+                        <p class='loss'>
+                            {{each}}
+                        </p>
+                    {% endif %}
+                    {% endfor%}
             </div>
         </div>
     </div>
