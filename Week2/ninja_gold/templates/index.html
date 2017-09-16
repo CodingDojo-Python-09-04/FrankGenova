@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Ninja Gold</title>
+</head>
+<body>
+    <div class='container'>
+        <div class='row'>
+            <div class='col b_grad col-sm-12'>
+                <h3>Your gold: <span>{{gold_stash}}</span></h3>
+            </div>
+        </div>
+        <div class='row'>
+            <form action="/process" method='post'>
+                <div class='row'>
+                    <div class='col b_grad col-sm-3'>
+                        <h3>Farm</h3>
+                        <p>(earns 10-20 golds)</p>
+                        <label class="sr-only" for="farm"></label>
+                        <input type="hidden" name="building" value="farm" id="farm">
+                        <input type="submit" value="Find Gold!">
+                    </div>
+                    <div class='col b_grad col-sm-3'>
+                        <h3>Cave</h3>
+                        <p>(earns 5-10 golds)</p>
+                        <label class="sr-only" for="cave"></label>
+                        <input type="hidden" name="building" value="cave" id="cave">
+                        <input type="submit" value="Find Gold!">
+                    </div>
+                    <div class='col b_grad col-sm-3'>
+                        <h3>House</h3>
+                        <p>(earns 2-5 golds)</p>
+                        <label class="sr-only" for="house"></label>
+                        <input type="hidden" name="building" value="house" id="house">
+                        <input type="submit" value="Find Gold!">
+                    </div>
+                    <div class='col b_grad col-sm-3'>
+                        <h3>Casino</h3>
+                        <p>(earns/take 0-50 golds)</p>
+                        <label class="sr-only" for="casino"></label>
+                        <input type="hidden" name="building" value="casino" id="casino">
+                        <input type="submit" value="Find Gold!">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class='row'>
+            <div class='col b_grad'>
+                <h2>Activities</h2>
+                <textarea name="activities" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>        
+</body>
+</html>
