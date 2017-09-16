@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+    <title>Great Number Game</title>
+</head>
+<body>
+    <div class='container'>
+        <div class="jumbotron">
+            <h1>Welcome to the Great Number Game!</h1>
+            <h2>I am thinking of a number between 1 and 100</h2>
+            <h2>Take a guess!</h2>
+        </div>
+        <div class='jumbotron'>
+            <form action="/process" method='post'>
+                <input type="number" name="guess" id="guess" placeholder="enter a number">
+                <input type="submit" value="Submit your guess">
+            </form>
+        </div>
+        <div class='jumbotron'>
+            <h2 class="display-5 {{bg}}">
+                {{msg}}
+            </h2>
+        </div>
+        <div class='jumbotron {{visibility}}' >
+            <form action="/restart" method='post'>
+                <input type="submit" value="Play again!">
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>     
+</body>
+</html>
