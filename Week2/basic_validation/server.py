@@ -10,7 +10,7 @@ from flask import Flask, render_template, redirect, request, session, flash
 
 app = Flask(__name__)
 
-app.secret_key = 'KeepItSecretKeepItSafe'
+app.secret_key = '\xfe\xe5\x97\xfc\xdf%Y8\xe9\x14\xf2{\x0fC\x97\n\x07&\x03\x10\xeb\xb9\xa5\xb0'
 
 @app.route('/')
 def index():
@@ -21,7 +21,7 @@ def index():
 
 def process():
     '''route for validation'''
-
+    # import pdb; pdb.set_trace()
     if len(request.form['name']) < 1:
         flash("Name cannot be empty")
     else:
