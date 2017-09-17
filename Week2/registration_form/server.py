@@ -83,17 +83,17 @@ def validate():
     for key, value in request.form.items():
         if key == 'last_name' or key == 'first_name':
             if NUMBER_REGEX.search(value):
-                flash('Numbers are not allowed in first or last name')
+                flash('Numbers are not allowed in first or last name', 'alert-danger')
             continue
         if key == 'email' and not EMAIL_REGEX.match(value):
-            flash('not a valid email')
+            flash('not a valid email', 'alert-danger')
             continue
         if (key == 'password' or key == 'confirm_password') and len(value) < 9:
-            flash('Password and Confirmation must be greater than 8 characters')
+            flash('Password and Confirmation must be greater than 8 characters', 'alert-danger')
         if (key == 'password' or key == 'confirm_password') and not UPPER_REGEX.match(value):
-            flash('Password and Confirmation must contain an Upper case letter')  
+            flash('Password and Confirmation must contain an Upper case letter', 'alert-danger')  
         if (key == 'password' or key == 'confirm_password') and not NUMBER_REGEX.search(value):
-            flash('Password and Confirmation must contain a number')     
+            flash('Password and Confirmation must contain a number', 'alert-danger')     
     
     birthdate = request.form['birthdate']
     print('birthdate: {}'.format(session['birthdate']))
@@ -106,10 +106,10 @@ def validate():
     print(type(redo_bd))
     print('now - bd {}'.format(today - redo_bd))
     if  redo_bd >= today:
-        flash('Birthdate must be in the past') 
+        flash('Birthdate must be in the past','alert-danger') 
 
     if request.form.get('password') != request.form.get('confirm_password'):
-        flash('Password and Confirmation do not match')
+        flash('Password and Confirmation do not match', 'alert-danger')
 
     session['email'] = request.form['email']
     session['first_name'] = request.form['first_name']
@@ -117,7 +117,7 @@ def validate():
     session['password'] = request.form['password']
     session['confirm_password'] = request.form['confirm_password']
     session['birthdate'] = request.form['birthdate']
-    flash('Thanks for submitting your information')
+    flash('Thanks for submitting your information','alert-success')
     return redirect(url_for('index'))
 
 app.run(debug=True)
