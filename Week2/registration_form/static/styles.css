@@ -1,0 +1,11 @@
+.row {
+    padding: 1rem;
+    border: .1rem solid black;
+    margin: 1rem;
+}
+
+.col {
+    /* padding: 1rem; */
+    /* border: .1rem solid black; */
+    margin: 1rem;
+}
