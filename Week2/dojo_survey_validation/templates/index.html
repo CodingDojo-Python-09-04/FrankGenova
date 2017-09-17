@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/start/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/styles.css')}}">
+    
+    <title>Index</title>
+</head>
+<body>
+    <div id="content" class="container col-sm-4">
+        {% block content%}
+        <form id="dojo_form" action="/result" method="POST">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                <div class="alert alert-danger" role="alert">
+                    <strong>{{message}}</strong>
+                </div>
+                {% endfor %}
+            {% endif %}
+            {% endwith %}
+            <label for="name"><h4>Your Name:</h4></label>
+            <input type="text" name="name" id="name" class="form-control form-control-lg">
+            <fieldset>
+                <label for="location"><h4>Dojo Location:</h4></label>
+                <select name="location" id="location" class="form-control form-control-lg">
+                    <option>Iceland</option>
+                    <option>New York NY</option>
+                    <option>London UK</option>
+                    <option>San Jose CA</option>
+                    <option>Tehran Iran</option>
+                    <option selected="selected">Washington DC</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="lanaguage"><h4>Favorite Language:</h4></label>
+                <select name="language" id="language" class="form-control form-control-lg">
+                    <option>Ajax</option>
+                    <option>BASIC</option>
+                    <option>C++</option>
+                    <option>JavaScript</option>
+                    <option>MUMPS</option>
+                    <option selected="selected">Python</option>
+                </select>
+            </fieldset>
+            <label for="comments"><h4>Comment (optional):</h4></label>
+            <input type="text" name="comments" id="comments" class="form-control form-control-lg">
+            <input id="submit" type="submit" value="Submit" class="btn-block btn-primary">
+        </form>
+        {% endblock%}
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="../static/js/apps.js"></script>
+</body>
+</html>

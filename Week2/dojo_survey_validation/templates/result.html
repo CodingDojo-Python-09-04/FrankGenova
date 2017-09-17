@@ -1,0 +1,27 @@
+{%extends 'index.html'%}
+{%block content%}
+<div id="result_response">
+  <h3>Submitted Info:</h3>
+  <table class="table">
+          <tbody>
+            <tr>
+              <th scope="row">Name:</th>
+              <td>{{name}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Dojo Location:</th>
+              <td>{{location}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Favorite Language:</th>
+              <td>{{language}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Comment:</th>
+              <td>{{comments}}</td>
+              </tr>
+          </tbody>
+        </table>
+        <a href="/" class="btn btn-primary btn-block">Back</a>
+  {%endblock%}
+</div>
