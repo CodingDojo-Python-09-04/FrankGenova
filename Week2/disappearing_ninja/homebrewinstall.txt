@@ -1,0 +1,223 @@
+(p2) FRANKs-MBP:disappearing_ninja frankgenova$ brew install mysql
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 1 tap (homebrew/core).
+==> New Formulae
+apibuilder-cli    brainfuck         cryfs             lean              ott               trash-cli
+azure-cli@1       clojure           docfx             llvm@4            pdfsandwich
+braid             credstash         jupyter           marathon-swift    pony-stable
+==> Updated Formulae
+abcm2ps                     elasticsearch               jenkins-lts                 pgcli
+abcmidi                     elvish                      jfrog-cli-go                pgformatter
+ace                         emacs                       jhipster                    pgrouting
+activemq                    emacs-clang-complete-async  jmxtrans                    pianobar
+afl-fuzz                    entr                        jpeg-turbo                  plantuml
+agda                        eprover                     jruby                       pngcrush
+agedu                       erlang                      jsdoc3                      poco
+akamai                      etcd                        json-c                      points2grid
+alexjs                      evince                      jsoncpp                     ponyc
+allure                      exact-image                 juju                        poppler
+amazon-ecs-cli              exempi                      julius                      postgresql
+angular-cli                 exploitdb                   khal                        postgresql@9.4
+anjuta                      eye-d3                      kibana                      postgresql@9.5
+ansible-lint                faas-cli                    klavaro                     postgrest
+apache-opennlp              fabric                      knot                        povray
+app-engine-go-64            fatsort                     kobalt                      pqiv
+app-engine-java             fb-client                   kompose                     pre-commit
+app-engine-python           fd                          kotlin                      presto
+apr                         feh                         ktoblzcheck                 protobuf
+apr-util                    ffe                         kube-aws                    psqlodbc
+arangodb                    ffmpeg                      kubernetes-cli              pulseaudio
+armadillo                   fibjs                       kubernetes-helm             pumba
+at-spi2-atk                 file-formula                latexila                    pwntools
+at-spi2-core                file-roller                 lbdb                        py2cairo
+atk                         filebeat                    lcdproc                     py3cairo
+atlassian-cli               firebase-cli                ldc                         pybind11
+ats2-postiats               fizmo                       le                          pygobject3
+avfs                        flow                        lean-cli                    qbs
+avro-c                      flowgrind                   ledger                      qemu
+avro-cpp                    fluent-bit                  legit                       quantlib
+aws-sdk-cpp                 fobis                       libbitcoin                  rabbitmq
+aws-shell                   folly                       libcds                      rancher-cli
+awscli                      fontconfig                  libchamplain                rebar@3
+axel                        fontforge                   libcoap                     recon-ng
+azure-cli                   fossil                      libcouchbase                redex
+bacula-fd                   freeciv                     libdap                      rgbds
+bandcamp-dl                 freeswitch                  libdiscid                   rhino
+baobab                      freetds                     libdsk                      rocksdb
+basex                       freexl                      liberasurecode              rom-tools
+bash-completion             frugal                      libfixbuf                   roswell
+bash-snippets               fs-uae                      libflowmanager              rt-audio
+bashdb                      fuse-emulator               libgsm                      rtags
+bcpp                        fuse-zip                    libgweather                 rtmidi
+bento4                      fzf                         libhdhomerun                rtv
+bibutils                    gabedit                     libinfinity                 ruby
+bigloo                      galen                       libjson-rpc-cpp             ruby-build
+binaryen                    gammaray                    liblockfile                 ruby@2.2
+bitcoin                     gandi.cli                   libmagic                    ruby@2.3
+bitrise                     gcsfuse                     libmowgli                   rust
+blockhash                   gd                          libpeas                     rustup-init
+bltool                      gdb                         libphonenumber              s6
+bonnie++                    gdk-pixbuf                  libpng                      saldl
+boost                       gdl                         libpq                       sbcl
+boost-bcp                   geckodriver                 libprotoident               sbt
+boost-mpi                   git-lfs                     libqalculate                scamper
+boost-python                git-quick-stats             libraw                      sdb
+btfs                        gitbucket                   libsoup                     selenium-server-standalone
+buku                        gjs                         libspectrum                 sfcgal
+caddy                       gl2ps                       libstfl                     shadowsocks-libev
+cake                        glib                        libtiff                     shairport-sync
+camlp5                      glib-networking             libtommath                  source-highlight
+cargo-completion            glibmm                      libtrace                    sqlcipher
+carthage                    glm                         libu2f-host                 sqldiff
+cassandra                   gloox                       libuv                       sqlite ✔
+castxml                     gmime                       libvirt                     sqlite-analyzer
+cclive                      gmsh                        libvoikko                   sqlmap
+ccm                         gnome-builder               libxml2                     ssdeep
+certbot                     gnome-icon-theme            libzip                      sslyze
+cgal                        gnupg                       lightning                   statik
+cgrep                       gnuplot                     lldpd                       streamlink
+chakra                      gnustep-make                llnode                      strongswan
+cheat                       gobject-introspection       llvm                        swiftformat
+checkbashisms               goenv                       logstash                    swiftlint
+checkstyle                  gofabric8                   lynis                       syncthing
+chipmunk                    gom                         lzlib                       sysbench
+chordii                     gomplate                    m-cli                       sysdig
+chromedriver                goocanvas                   macvim                      szip
+chronograf                  goofys                      magic-wormhole              tbb
+citus                       google-java-format          mame                        tbox
+cloc                        gource                      mapcrafter                  tcpdump
+closure-compiler            gpp                         mbedtls                     tee-clc
+cmake                       gpsbabel                    mdp                         telegraf
+cmark-gfm                   gpsim                       media-info                  teleport
+cockroach                   gputils                     mediaconch                  termius
+conan                       grafana                     meson                       terraform
+conjure-up                  grib-api                    metaproxy                   terragrunt
+consul                      groonga                     metricbeat                  texinfo
+consul-backinator           grpc                        mgba                        texmath
+consul-template             grunt-completion            micro                       tgui
+convox                      gsettings-desktop-schemas   mikutter                    thefuck
+coreutils                   gsmartcontrol               mksh                        tinc
+couchdb                     gsoap                       mkvtoolnix                  tippecanoe
+crash                       gspell                      mmark                       todoman
+creduce                     gtk+3                       mongo-c-driver              tokei
+crowdin                     gtksourceview3              mongodb                     trace2html
+crystal-icr                 gucharmap                   mongoose                    trafficserver
+crystal-lang                gupnp-tools                 mpfr                        translate-toolkit
+cucumber-cpp                gwenhywfar                  mpv                         tsung
+cython                      harfbuzz                    mpw                         tth
+dar                         haxe                        mutt                        twarc
+dbhash                      heroku                      mysql-sandbox               typescript
+dcm2niix                    hevea                       ncmpcpp                     uhd
+dcos-cli                    hexedit                     nestopia-ue                 urh
+deis                        hfstospell                  nim                         vagrant-completion
+dfc                         hicolor-icon-theme          nnn                         vala
+diff-pdf                    homebank                    node                        valabind
+diffoscope                  hspell                      node-build                  vault
+digdag                      hugo                        node@6                      vim
+django-completion           hunspell                    nomad                       vim@7.4
+dlib                        hwloc                       notmuch                     vips
+dmd                         i3                          nvm                         vowpal-wabbit
+dmtx-utils                  ibex                        oniguruma                   vtk
+docker                      icbirc                      onscripter                  watchexec
+docker-completion           icoutils                    opendetex                   webpack
+docker-compose              imagemagick                 openfortivpn                wesnoth
+docker-compose-completion   imagemagick@6               openmsx                     widelands
+docker-credential-helper    immortal                    openrtsp                    wireguard-tools
+docker-machine-parallels    infer                       openvdb                     wireshark
+docker-swarm                influxdb                    osm2pgrouting               woboq_codebrowser
+dsh                         innoextract                 osmium-tool                 wpscan
+dspdfviewer                 io                          osquery                     xctool
+dtc                         ios-deploy                  osrm-backend                xorriso
+dterm                       iozone                      packer                      xrootd
+dub                         ipbt                        packetbeat                  xtensor
+duck                        ipython                     paket                       yarn
+duo_unix                    ipython@5                   pam_yubico                  yaz
+duplicity                   ircd-hybrid                 pandoc                      you-get
+duply                       ired                        pandoc-citeproc             youtube-dl
+dvdauthor                   isc-dhcp                    pango                       zabbix
+dwarfutils                  itex2mml                    pc6001vx                    zanata-client
+dwdiff                      ivykis                      pcb2gcode                   zbar
+dynamips                    jasper                      pdf2htmlex                  zimg
+e2fsprogs                   jena                        pdftoedn                    zsh
+easyrpg-player              jenkins                     pdftoipe                    zsh-syntax-highlighting
+efl                         jenkins-job-builder         percona-server-mongodb
+==> Renamed Formulae
+fbida -> exiftran                    gtef -> tepl                         srtp@1.5 -> srtp@1.6
+==> Deleted Formulae
+abi-compliance-checker      kes                         pillow                      team-explorer-everywhere
+
+Error: Could not link:
+/usr/local/etc/bash_completion.d/brew
+
+Please delete these paths and run `brew update`.
+Error: Could not link:
+/usr/local/share/zsh/site-functions/_brew
+
+Please delete these paths and run `brew update`.
+Error: Could not link:
+/usr/local/share/man/man1/brew.1
+
+Please delete these paths and run `brew update`.
+Error: Could not link:
+/usr/local/share/doc/homebrew
+
+Please delete these paths and run `brew update`.
+==> Downloading https://homebrew.bintray.com/bottles/mysql-5.7.19.sierra.bottle.tar.gz
+######################################################################## 100.0%
+==> Pouring mysql-5.7.19.sierra.bottle.tar.gz
+==> /usr/local/Cellar/mysql/5.7.19/bin/mysqld --initialize-insecure --user=frankgenova --basedir=/usr/local/Ce
+==> Caveats
+We've installed your MySQL database without a root password. To secure it run:
+    mysql_secure_installation
+
+MySQL is configured to only allow connections from localhost by default
+
+To connect run:
+    mysql -uroot
+
+To have launchd start mysql now and restart at login:
+  brew services start mysql
+Or, if you don't want/need a background service you can just run:
+  mysql.server start
+==> Summary
+🍺  /usr/local/Cellar/mysql/5.7.19: 322 files, 233MB
+(p2) FRANKs-MBP:disappearing_ninja frankgenova$
+127.0.0.1 - - [17/Sep/2017 15:39:47] "POST /process HTTP/1.1" 302 -
+
+
+
+
+######################################################################## 100.0%
+==> Pouring mysql-5.7.19.sierra.bottle.tar.gz
+==> /usr/local/Cellar/mysql/5.7.19/bin/mysqld --initialize-insecure --user=frankgenova --basedir=/usr/local/Ce
+==> Caveats
+We've installed your MySQL database without a root password. To secure it run:
+    mysql_secure_installation
+
+MySQL is configured to only allow connections from localhost by default
+
+To connect run:
+    mysql -uroot
+
+To have launchd start mysql now and restart at login:
+  brew services start mysql
+Or, if you don't want/need a background service you can just run:
+  mysql.server start
+==> Summary
+🍺  /usr/local/Cellar/mysql/5.7.19: 322 files, 233MB
+(p2) FRANKs-MBP:disappearing_ninja frankgenova$ touch homebrewinstall.txt
+(p2) FRANKs-MBP:disappearing_ninja frankgenova$ open homebrewinstall.txt
+(p2) FRANKs-MBP:disappearing_ninja frankgenova$ brew services start mysql
+==> Tapping homebrew/services
+Cloning into '/usr/local/Homebrew/Library/Taps/homebrew/homebrew-services'...
+remote: Counting objects: 12, done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 12 (delta 0), reused 7 (delta 0), pack-reused 0
+Unpacking objects: 100% (12/12), done.
+Tapped 0 formulae (40 files, 54.1KB)
+==> Successfully started `mysql` (label: homebrew.mxcl.mysql)
+(p2) FRANKs-MBP:disappearing_ninja frankgenova$
+ * Restarting with stat
+
+
