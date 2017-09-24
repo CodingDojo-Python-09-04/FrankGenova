@@ -1,0 +1,4 @@
+USE twitter;
+
+SELECT * FROM users
+WHERE first_name between 'All' and 'Kz';
