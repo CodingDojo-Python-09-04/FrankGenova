@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "server.py", line 8, in <module>
+    print mysql.query_db("SELECT * FROM users")
+  File "/Users/frankgenova/Documents/DojoPy0904/Week4/flask_mysql/mysqlconnection.py", line 22, in query_db
+    result = self.db.session.execute(text(query), data)
+  File "/Users/frankgenova/Environments/p2/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 157, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/frankgenova/Environments/p2/lib/python2.7/site-packages/sqlalchemy/util/_collections.py", line990, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "/Users/frankgenova/Environments/p2/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2867,in __call__
+    return self.class_(**local_kw)
+  File "/Users/frankgenova/Environments/p2/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py", line 145, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "/Users/frankgenova/Environments/p2/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py", line 922, in engine
+    return self.get_engine()
+  File "/Users/frankgenova/Environments/p2/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py", line 941, in get_engine
+    return connector.get_engine()
+  File "/Users/frankgenova/Environments/p2/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py", line 543, in get_engine
+    self._engine = rv = sqlalchemy.create_engine(info, **options)
+  File "/Users/frankgenova/Environments/p2/lib/python2.7/site-packages/sqlalchemy/engine/__init__.py", line 391, in create_engine
+    return strategy.create(*args, **kwargs)
+  File "/Users/frankgenova/Environments/p2/lib/python2.7/site-packages/sqlalchemy/engine/strategies.py", line80, in create
+    dbapi = dialect_cls.dbapi(**dbapi_args)
+  File "/Users/frankgenova/Environments/p2/lib/python2.7/site-packages/sqlalchemy/dialects/mysql/mysqldb.py",line 110, in dbapi
+    return __import__('MySQLdb')
+ImportError: No module named MySQLdb
