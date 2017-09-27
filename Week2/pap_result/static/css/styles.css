@@ -11,16 +11,29 @@ label {
     height: 200px;
 }
 
-form, #result_response {
+form {
       margin-left: 10px;
       border: 2px solid black;
       border-radius: 5px;
       padding: 10px;
-      width: 400px;
+      /* width: 400px; */
       background-image: -webkit-gradient(linear, left top, left bottom, from(darkgrey), to(lightgray,darkgray));
       background-image: -webkit-linear-gradient(top, darkgrey, lightgray,darkgray);
       background-image: -moz-linear-gradient(top, darkgrey, lightgray,darkgray);
       background-image: linear-gradient(to bottom, darkgrey, lightgray,darkgray);
+}
+
+#result_response, p{
+    font-size: 10pt;
+    margin-left: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    /* width: 400px; */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(darkgrey), to(lightgray,darkgray));
+    background-image: -webkit-linear-gradient(top, darkgrey, lightgray,darkgray);
+    background-image: -moz-linear-gradient(top, darkgrey, lightgray,darkgray);
+    background-image: linear-gradient(to bottom, darkgrey, lightgray,darkgray);
 }
 
 #submit {
