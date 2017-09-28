@@ -21,6 +21,28 @@ def create():
     mysql.query_db(query, data)         
     return redirect('/')
 
+@app.route('/update_friend/<friend_id>', methods=['POST'])
+def update(friend_id):
+    query = "UPDATE  friends \
+            SET  first_name = :first_name, last_name = :last_name, occupation = :occupation \
+            WHERE id = :id"
+            
+    data = {
+            'first_name': request.form['first_name'],
+            'last_name': request.form['last_name'],
+            'occupation': request.form['occupation'],
+            'id': friend_id
+    }         
+    mysql.query_db(query, data)         
+    return redirect('/')
+
+@app.route('/remove_friend/<friend_id>', methods=['POST'])
+def delete(friend_id):
+    query = "DELETE FROM friends  WHERE id = :id"
+    data = {'id': friend_id}         
+    friends = mysql.query_db(query, data)
+    return redirect('/')
+    
 @app.route('/friends/<friend_id>')
 def show(friend_id):
     query = "SELECT * FROM friends WHERE id = :specific_id"
