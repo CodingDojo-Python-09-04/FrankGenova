@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>email validation</title>
+    <title>Success</title>
 </head>
 <body>
     {% with messages = get_flashed_messages() %}
@@ -16,10 +16,16 @@
             </ul>
         {% endif %}
     {% endwith %}
-    <form action="/check" method="POST">
-        <label for="email">Enter a valid email: </label>
+    <h2>Email Address Entered</h2>
+    {% for email in email_list:%}
+        <ul>
+            <li>{{ email.email }} {{ email.created_at }}</li>
+        </ul>
+    {% endfor %}
+    <form action="/remove" method="POST">
+        <label for="email">Remove this  email: </label>
         <input type="email" name="email" id="email">
         <input type="submit" value="Submit">
-    </form>
+    </form>    
 </body>
 </html>
