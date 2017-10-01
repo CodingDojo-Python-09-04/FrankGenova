@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Friends</title>
+</head>
+<body>
+<form action="/friends/{{ friends.id }}" method="post">
+    <label for="id">{{friends.id}}</label>
+    <input type="hidden" name="id" value="{{ friends.id }}">
+    <label for="first_name">Frist Name:</label>
+    <input type="text" name="first_name" id="first_name" value="{{ friends.first_name }}"}>
+    <label for="last_name">Last Name</label>
+    <input type="text" name="last_name" id="last_name" value="{{ friends.last_name }}">
+    <label for="email">email</label>
+    <input type="email" name="email" id="email" value="{{ friends.email }}">
+    <input type="submit" value="Update">
+</form>
+</body>
+</html>

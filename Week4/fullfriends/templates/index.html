@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Full Friends</title>
+</head>
+<body>
+    <h1>Full Friends</h1>
+    <table>
+        <tr>
+            <td><h3>First Name</h3></td>
+            <td><h3>Last  Name</h3></td>
+            <td><h3>Email</h3></td>
+            <td><h3>Actions</h3></td>
+        </tr>
+        {% for friend in friends: %}
+        <tr>
+            <td>{{ friend.first_name }}</td>
+            <td>{{friend.last_name}}</td>
+            <td>{{friend.email}}</td>
+            <td>
+                <form action="/friends/{{ friend.id }}/edit">
+                    <input type="hidden" name="id" value={{friend.id}} id="friend">
+                    <input type="submit" value="edit">
+                </form>
+            </td>
+            <td>
+                <form action="/friends/{{ friend.id }}/delete" method="post">
+                    <input type="hidden" name="id" value={{friend.id}} id="friend">
+                    <input type="submit" value="delete">
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <form action="/friends" method="post">
+        <label for="first_name">Frist Name:</label>
+        <input type="text" name="first_name" id="first_name">
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name" id="last_name">
+        <label for="email">email</label>
+        <input type="email" name="email" id="email">
+        <input type="submit" value="Add Friend">
+    </form>
+    
+</body>
+</html>
