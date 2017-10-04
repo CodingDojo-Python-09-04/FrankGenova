@@ -22,8 +22,9 @@ Methods:
 item including sales tax
 [+] Return: takes reason for return as a parameter and changes status accordingly.
 If the item is being returned because it is defective change status to defective
-and change price to 0. If it is being returned in the box,
-like new mark it as for sale. If the box has been opened set status to used and
+and change price to 0. 
+If it is being returned in the box, like new mark it as for sale.
+If the box has been opened set status to used and
 apply a 20% discount.
 [+] Display Info: show all product details.
 Every method that doesn't have to return something should return self
@@ -57,13 +58,15 @@ class Product(object):
 
     def return_product(self, return_reason):
         '''return a product and update status'''
-
-        if return_reason == 'broken':
-            self.status = 'needs repair'
-        elif return_reason == 'wrong size':
+        
+        if return_reason == 'defective':
+            self.price = 0
+            self.status = 'defective'
+        elif return_reason == 'like new':
             self.status = 'for sale'
-        else:
-            self.status = 'process return'
+        elif return_reason == 'open':
+            self.status = 'used'
+            self.price = (self.price *.20) + self.price
         return self
 
     def display_inf(self):
@@ -77,9 +80,13 @@ class Product(object):
         print('Status: {}'.format(self.status))
         return self
 
-    def main():
-        product1 = Product(self, 150000, 'onyx', 10, 'Dior', 5000000, status='for sale')
-        product2 = Product(self, 9900, 'jade', 15, 'Ralph', 505600000, status='for sale')
+def main():
+    '''run main program'''
 
+    product1 = Product(150000, 'onyx', 10, 'Dior', 5000000, 'for sale')
+    product2 = Product(9900, 'jade', 15, 'Ralph', 505600000, 'for sale')
+    product1.return_product('open').display_inf()
+    product2.return_product('defective').display_inf()
+        
 if __name__ == '__main__':
     main()
